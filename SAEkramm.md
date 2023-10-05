@@ -60,3 +60,25 @@ Ce processus de centralisation se décompose en plusieurs étapes :
 -   Le filtrage : vous analysez et filtrez les différentes metrics et variables pour répondre aux besoins spécifiques du monitoring.
     
 -   La présentation des données : cette étape permet de créer des dashboards personnalisés regroupant les données synthétisées, pour permettre de lire et comprendre les données des logs
+
+
+## ELK Stack
+
+Outil d’analyse de logs composé de 3 logiciels open source, développés par la société Elastic : Elasticsearch, Logstach et Kibana
+
+Communauté Associée : Grande communauté open source.
+
+Elasticsearch va permettre d’extraire les données, Logstash normalise toutes sortes de données temporelles et Kibana apporte un insight.
+
+ElasticSearch est un moteur de recherche et d’analyse qui utilise le format JSON. Son objectif est d’extraire efficacement les données à partir de sources de données structurées ou non structurées en temps réel. Elasticsearch utilise Lucene pour fournir les capacités de recherche en texte intégral les plus puissantes disponibles dans n'importe quel produit open-source.
+
+Logstash est un outil pour la saisie, le traitement et la sortie des données logs. Sa fonction est d’analyser, filtrer et découper les logs pour les transformer en documents formatés à destination d’Elasticsearch.
+
+ 
+Kibana est un tableau de bord interactif et paramétrable qui permet de visualiser les données stockées dans ElasticSearch. Kibana apporte un insight sur les tendances et les modèles sous toutes formes de diagrammes et courbes. Ce dashboard peut être partagé et associé à des visualisations de données pour une communication rapide et intelligente
+
+## Conclusion
+
+Le choix de la solution de collecte, centralisation et présentation de logs dépendra des besoins spécifiques de votre environnement. ELK Stack offre une puissante capacité de recherche et de visualisation
+
+Il est essentiel de prendre en compte la complexité de la configuration initiale, les ressources requises et les fonctionnalités spécifiques pour prendre une décision éclairée. Chacune des solutions a une communauté active qui peut fournir un support et des extensions utiles pour répondre aux besoins de votre infrastructure.
