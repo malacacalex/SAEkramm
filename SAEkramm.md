@@ -77,6 +77,25 @@ Logstash est un outil pour la saisie, le traitement et la sortie des données lo
  
 Kibana est un tableau de bord interactif et paramétrable qui permet de visualiser les données stockées dans ElasticSearch. Kibana apporte un insight sur les tendances et les modèles sous toutes formes de diagrammes et courbes. Ce dashboard peut être partagé et associé à des visualisations de données pour une communication rapide et intelligente
 
+## Possibilités Offertes par les "Dashboards" avec ELK Stack
+
+Kibana, en tant qu'interface de visualisation de ELK Stack, offre de puissantes possibilités pour créer des tableaux de bord et visualiser les logs de manière efficace. Voici quelques-unes des fonctionnalités et des possibilités offertes par les "dashboards" avec Kibana :
+
+-   Création de Tableaux de Bord Personnalisés : Vous pouvez créer des tableaux de bord personnalisés en regroupant des visualisations (graphiques, camemberts, jauges, etc.) pour afficher des informations spécifiques à votre infrastructure.
+    
+-   Visualisations Avancées : Kibana propose diverses visualisations pour représenter les données, notamment des graphiques à barres, des graphiques à secteurs, des histogrammes, des cartes géographiques, etc.
+    
+-   Filtrage Dynamique : Vous pouvez appliquer des filtres pour affiner les données affichées dans vos visualisations, ce qui facilite la recherche d'informations spécifiques.
+    
+-   Alertes en Temps Réel : Kibana permet de configurer des alertes en temps réel basées sur des critères prédéfinis. Vous serez averti immédiatement en cas de problème.
+    
+-   Exploration et Analyse de Données : Vous pouvez explorer vos données de logs de manière interactive, en cliquant sur des points dans les visualisations pour voir les détails des logs sous-jacents.
+    
+-   Intégration avec Elasticsearch : Kibana offre une intégration transparente avec Elasticsearch, ce qui permet des recherches rapides et des agrégations avancées.
+    
+
+En résumé, ELK Stack, avec Kibana comme outil de visualisation, offre une puissante plateforme pour la centralisation des logs à partir de diverses sources, la création de tableaux de bord personnalisés et l'analyse des données de logs pour une surveillance et un diagnostic efficaces de votre infrastructure.
+
 ## Conclusion
 
 Le choix de la solution de collecte, centralisation et présentation de logs dépendra des besoins spécifiques de votre environnement. ELK Stack offre une puissante capacité de recherche et de visualisation
