@@ -1,0 +1,8 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/*.log  # Spécifiez le chemin de vos fichiers de logs
+
+output.logstash:
+  hosts: ["logstash:5044"]  # Adresse et port de Logstash

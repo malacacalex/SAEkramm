@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  elasticsearch:
+    build:
+      context: ./DockerElastic  # Chemin relatif au répertoire contenant docker-compose.yml
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+
+  logstash:
+    build:
+      context: ./DockerLogstash  # Chemin relatif au répertoire contenant docker-compose.yml
+    volumes:
+      - ./logstash/config/:/usr/share/logstash/config/
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    build:
+      context: ./DockerKibana  # Chemin relatif au répertoire contenant docker-compose.yml
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.10.3
+    volumes:
+      - ./filebeat/filebeat.yml
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/log:/var/log
+    user: root
+    command: ["filebeat", "-e", "--strict.perms=false"]
+
+volumes:
+  elasticsearch-data:

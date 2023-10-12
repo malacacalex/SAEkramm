@@ -1,0 +1,11 @@
+cluster.name: my-elastic-cluster
+node.name: my-elastic-node
+
+network.host: 0.0.0.0
+http.port: 9200
+
+path.data: /usr/share/elasticsearch/data
+path.logs: /usr/share/elasticsearch/logs
+
+bootstrap.memory_lock: false
+indices.memory.index_buffer_size: 30%
